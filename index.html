@@ -51,7 +51,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Lorenzo Jackson</h1>
-        <p class="section__text__p2">Computer Science Student & Developer</p>
+        <p class="section__text__p2"></p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -78,6 +78,12 @@
           />
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
     </section>
 
     <!-- About Section -->
@@ -101,7 +107,9 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ Years <br />Frontend & Backend Development</p>
+              <p>
+                Hands-on experience with software development and IT solutions
+              </p>
             </div>
             <div class="details-container">
               <img
@@ -115,23 +123,25 @@
           </div>
           <div class="text-container">
             <p>
-              Hi, I’m Lorenzo! I’m pursuing a Computer Science degree with a
-              focus in Software Development while serving in the Air Force
+              Hi, I’m Lorenzo! I’m a Computer Science student with a focus in
+              Software Development and an active member of the Air Force
               National Guard as a Financial Management & Comptroller. I bring a
-              unique mix of technical and leadership experience.
+              unique blend of technical expertise and leadership experience, and
+              I thrive on solving problems through thoughtful, creative
+              solutions.
             </p>
             <p>
-              I’m passionate about building impactful software, particularly in
-              areas like web development, database design, and problem-solving
-              through innovative solutions. I’ve collaborated with peers in the
-              Google Developer Student Club and enjoy tackling projects that
-              combine creativity and technical precision.
+              I’m passionate about building software that makes a real impact,
+              whether it’s web applications, mobile apps, or data-driven tools.
+              I enjoy collaborating with peers, learning new frameworks, and
+              pushing the boundaries of what technology can do.
             </p>
             <p>
-              Outside of academics, I love creating personal projects—like a
-              seamless file-sharing platform—and continuously learning new tools
-              and frameworks. I’m adaptable, detail-oriented, and motivated to
-              make a difference through technology.
+              Outside of academics and work, I love creating personal
+              projects—like seamless file-sharing platforms and supportive
+              mobile apps—and continuously expanding my skill set. I’m
+              detail-oriented, adaptable, and motivated to turn ideas into
+              actionable solutions that make a difference.
             </p>
           </div>
         </div>
@@ -144,106 +154,136 @@
       />
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <!-- Frontend -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
 
-          <!-- Backend -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div>
-                  <h3>Node.js</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div>
-                  <h3>Express.js</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div>
-                  <h3>Git & Version Control</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
+      <div class="experience-cards">
+        <!-- Air Force National Guard -->
+        <div class="experience-card">
+          <img
+            src="./assets/Seperated-Symbol.jpg"
+            alt="Air Force icon"
+            class="experience-icon"
+          />
+          <h3>Financial Management & Comptroller</h3>
+          <span>Air Force National Guard | Jun 2021 – Present</span>
+          <ul>
+            <li>
+              Managed accounting records and systems for over $2M in funds,
+              ensuring accuracy and compliance.
+            </li>
+            <li>
+              Processed and certified 500+ transactions with 98% accuracy.
+            </li>
+            <li>
+              Led a team of 5 in transaction certification and onboarding new
+              personnel.
+            </li>
+          </ul>
+        </div>
+
+        <!-- 555 International Internship -->
+        <div class="experience-card">
+          <img
+            src="./assets/download.png"
+            alt="IT icon"
+            class="experience-icon"
+          />
+          <h3>IT Specialist Intern</h3>
+          <span>555 International | May 2023 – Aug 2023</span>
+          <ul>
+            <li>
+              Deployed, imaged, and reinstalled OS on 200+ devices, ensuring
+              system security and reliability.
+            </li>
+            <li>
+              Diagnosed and resolved technical issues with a 95%+ first-contact
+              resolution rate.
+            </li>
+          </ul>
+        </div>
+        <!-- Volunteer Experience -->
+        <div class="experience-card">
+          <img
+            src="./assets/volunteer.png"
+            alt="Volunteer icon"
+            class="experience-icon"
+          />
+          <h3>Volunteer</h3>
+          <span>The Hospice of Baton Rouge | Aug 2024 – Present</span>
+          <ul>
+            <li>
+              Provided emotional support to patients and families, demonstrating
+              empathy under sensitive conditions.
+            </li>
+            <li>
+              Assisted with administrative tasks to support hospice operations
+              in compliance with health and safety standards.
+            </li>
+          </ul>
         </div>
       </div>
+
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">My</p>
+      <h1 class="title">Technical Skills</h1>
+
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="badges">
+            <span class="badge">Java</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">C</span>
+            <span class="badge">Dart</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">Python</span>
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+          </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="skill-category">
+          <h3>Tools & Technologies</h3>
+          <div class="badges">
+            <span class="badge">Microsoft Excel</span>
+            <span class="badge">Power BI</span>
+            <span class="badge">Firebase</span>
+            <span class="badge">Webpack</span>
+            <span class="badge">Linux</span>
+            <span class="badge">Git</span>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="skill-category">
+          <h3>Certifications</h3>
+          <div class="badges">
+            <span class="badge">Secret Security Clearance</span>
+            <span class="badge">CompTIA Security+ (In Progress)</span>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow fade-in"
         onclick="location.href='./#projects'"
       />
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -285,7 +325,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/Figma_yWRKMGUKX1.png"
                 alt="Project 2"
                 class="project-img"
               />
@@ -306,9 +346,18 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
 
-          <!-- Project 3 -->
-           <!--
+    <!-- Project 3 -->
+    <!--
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -339,7 +388,7 @@
                 Live Demo
               </button>
             </div> 
-            -->
+            
           </div>
         </div>
       </div>
@@ -350,7 +399,7 @@
         onclick="location.href='./#contact'"
       />
     </section>
-
+-->
     <!-- Contact Section -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
