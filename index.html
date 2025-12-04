@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
     <title>Lorenzo Jackson | Portfolio</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
@@ -941,7 +943,7 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2"
-              onclick="window.open('./assets/ResumeV3.pdf')"
+              onclick="window.open('./assets/Resume.pdf')"
             >
               Download CV
             </button>
@@ -1025,8 +1027,8 @@
             </p>
             <p>
               Outside of academics and work, I love creating personal
-              projects—like seamless file-sharing platforms and supportive
-              mobile apps—and continuously expanding my skill set. I'm
+              projects—like seamless file-sharing platforms and wellness
+              apps—and continuously expanding my skill set. I'm
               detail-oriented, adaptable, and motivated to turn ideas into
               actionable solutions that make a difference.
             </p>
@@ -1047,6 +1049,23 @@
       <h1 class="title">Experience</h1>
 
       <div class="experience-cards">
+        <!-- Bascom Hunter Technologies -->
+        <div class="experience-card">
+          <img
+            src="./assets/bascom.png"
+            alt="Software Development icon"
+            class="experience-icon"
+          />
+          <h3>Software Development Intern</h3>
+          <span>Bascom Hunter Technologies, Inc. | Summer 2026 (Incoming)</span>
+          <ul>
+            <li>
+              Selected for competitive internship to develop software solutions
+              in a professional environment.
+            </li>
+          </ul>
+        </div>
+
         <!-- Air Force National Guard -->
         <div class="experience-card">
           <img
@@ -1058,15 +1077,35 @@
           <span>Air Force National Guard | Jun 2021 – Present</span>
           <ul>
             <li>
-              Managed accounting records and systems for over $2M in funds,
-              ensuring accuracy and compliance.
+              Managed accounting records and systems, ensuring responsible utilization of over $2 million in funds.
             </li>
             <li>
               Processed and certified 500+ transactions with 98% accuracy.
             </li>
             <li>
-              Led a team of 5 in transaction certification and onboarding new
-              personnel.
+              Led a team of 5 members to certify transactions and onboard new personnel.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Handshake AI Solutions -->
+        <div class="experience-card">
+          <img
+            src="./assets/download.jpeg"
+            alt="AI Research icon"
+            class="experience-icon"
+          />
+          <h3>AI Research Assistant (Data Annotation)</h3>
+          <span>Handshake AI Solutions | Nov 2025 – Present</span>
+          <ul>
+            <li>
+              Analyzed and labeled AI generated images for multimodal model training.
+            </li>
+            <li>
+              Produced precise transformation descriptions and met accuracy benchmarks.
+            </li>
+            <li>
+              Contributed large-volume research datasets under strict timing standards.
             </li>
           </ul>
         </div>
@@ -1078,16 +1117,14 @@
             alt="IT icon"
             class="experience-icon"
           />
-          <h3>IT Specialist Intern</h3>
+          <h3>IT Specialist (Internship)</h3>
           <span>555 International | May 2023 – Aug 2023</span>
           <ul>
             <li>
-              Deployed, imaged, and reinstalled OS on 200+ devices, ensuring
-              system security and reliability.
+              Imaged, deployed, and reinstalled OS on 200+ devices, ensuring security and system reliability.
             </li>
             <li>
-              Diagnosed and resolved technical issues with a 95%+ first-contact
-              resolution rate.
+              Diagnosed and resolved technical issues with a 95%+ first-contact resolution rate.
             </li>
           </ul>
         </div>
@@ -1103,12 +1140,10 @@
           <span>The Hospice of Baton Rouge | Aug 2024 – Present</span>
           <ul>
             <li>
-              Provided emotional support to patients and families, demonstrating
-              empathy under sensitive conditions.
+              Provided emotional support to patients and families.
             </li>
             <li>
-              Assisted with administrative tasks to support hospice operations
-              in compliance with health and safety standards.
+              Assisted staff with administrative operations.
             </li>
           </ul>
         </div>
@@ -1147,12 +1182,14 @@
         <div class="skill-category">
           <h3>Tools & Technologies</h3>
           <div class="badges">
+            <span class="badge">Firebase</span>
+            <span class="badge">Next.js</span>
+            <span class="badge">React</span>
+            <span class="badge">TailwindCSS</span>
             <span class="badge">Microsoft Excel</span>
             <span class="badge">Power BI</span>
-            <span class="badge">Firebase</span>
-            <span class="badge">Webpack</span>
-            <span class="badge">Linux</span>
             <span class="badge">Git</span>
+            <span class="badge">Linux</span>
           </div>
         </div>
 
@@ -1161,7 +1198,6 @@
           <h3>Certifications</h3>
           <div class="badges">
             <span class="badge">Secret Security Clearance</span>
-            <span class="badge">CompTIA Security+ (In Progress)</span>
           </div>
         </div>
       </div>
@@ -1193,8 +1229,7 @@
               Drop & Go File Sharing
             </h2>
             <p>
-              A web app that allows users to quickly upload and share files
-              across devices using randomly generated access codes.
+              A secure file-sharing site with Firebase Storage and Firestore. Implemented authentication, upload validation, and timed link expiration.
             </p>
             <div class="btn-container">
               <button
@@ -1222,11 +1257,10 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">
-              Grief Support App
+              Fortis - Wellness App
             </h2>
             <p>
-              A mobile app concept designed to help people navigate grief with
-              memory boards, journaling features, and supportive resources.
+              A Flutter wellness app with journaling, meditation, and grounding tools. Led UI/UX design in Figma and integrated Firebase Auth and Firestore.
             </p>
             <div class="btn-container">
               <button
@@ -1242,8 +1276,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/carofferanalyzer.jpg
-                "
+                src="./assets/carofferanalyzer.jpg"
                 alt="Project 3"
                 class="project-img"
               />
@@ -1252,9 +1285,7 @@
               Car Offer Analyzer
             </h2>
             <p>
-              Help users determine whether a car purchase offer is fair and give
-              actionable negotiation advice, combining market data with
-              AI-driven guidance.
+              A PWA that evaluates car offers using market data and AI negotiation logic. Built with Next.js, React, TailwindCSS, and OpenAI API for fairness scoring.
             </p>
             <div class="btn-container">
               <button
