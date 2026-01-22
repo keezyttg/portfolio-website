@@ -1,11 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
     <title>Lorenzo Jackson | Portfolio</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
@@ -39,7 +37,11 @@
       }
 
       body {
-        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
           sans-serif;
         background: var(--darker);
         color: var(--light);
@@ -55,7 +57,8 @@
         left: -50%;
         width: 200%;
         height: 200%;
-        background: radial-gradient(
+        background:
+          radial-gradient(
             circle at 20% 50%,
             rgba(99, 102, 241, 0.15) 0%,
             transparent 50%
@@ -550,6 +553,13 @@
         margin-bottom: 1rem;
         border-radius: 0.75rem;
         object-fit: cover;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .experience-icon:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
       }
 
       .experience-card h3 {
@@ -584,6 +594,12 @@
         left: 0;
         color: var(--primary);
         font-weight: bold;
+      }
+
+      /* Volunteer card styling */
+      .experience-card.volunteer {
+        opacity: 0.95;
+        border-style: dashed;
       }
 
       /* Skills Section */
@@ -638,7 +654,7 @@
       }
 
       /* Projects Section */
-      .about-containers {
+      .projects-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 2rem;
@@ -877,7 +893,7 @@
 
         .experience-cards,
         .skills-grid,
-        .about-containers {
+        .projects-container {
           grid-template-columns: 1fr;
         }
 
@@ -943,11 +959,14 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2"
-              onclick="window.open('./assets/ResumeV3.pdf')"
+              onclick="window.open('./assets/ResumeV4.pdf')"
             >
               Download CV
             </button>
-            <button class="btn btn-color-1" onclick="location.href='#contact'">
+            <button
+              class="btn btn-color-1"
+              onclick="location.href = '#contact'"
+            >
               Contact Info
             </button>
           </div>
@@ -956,13 +975,16 @@
               src="./assets/linkedin.png"
               alt="LinkedIn"
               class="icon"
-              onclick="location.href='https://www.linkedin.com/in/lorenzo-jackson-b1439524a/'"
+              onclick="
+                location.href =
+                  'https://www.linkedin.com/in/lorenzo-jackson-b1439524a/'
+              "
             />
             <img
               src="./assets/github.png"
               alt="Github"
               class="icon"
-              onclick="location.href='https://github.com/keezyttg'"
+              onclick="location.href = 'https://github.com/keezyttg'"
             />
           </div>
         </div>
@@ -971,7 +993,7 @@
         src="./assets/arrow.png"
         alt="Arrow"
         class="icon arrow"
-        onclick="location.href='#about'"
+        onclick="location.href = '#about'"
       />
     </section>
 
@@ -1012,25 +1034,17 @@
           </div>
           <div class="text-container">
             <p>
-              Hi, I'm Lorenzo! I'm a Computer Science student with a focus in
-              Software Development and an active member of the Air Force
-              National Guard as a Financial Management & Comptroller. I bring a
-              unique blend of technical expertise and leadership experience, and
-              I thrive on solving problems through thoughtful, creative
-              solutions.
+              I'm a Computer Science student with a focus in Software
+              Development and an active member of the Air Force National Guard
+              as a Financial Management & Comptroller. I bring a unique blend of
+              technical expertise and leadership experience, and I thrive on
+              solving problems through thoughtful, creative solutions.
             </p>
             <p>
               I'm passionate about building software that makes a real impact,
               whether it's web applications, mobile apps, or data-driven tools.
               I enjoy collaborating with peers, learning new frameworks, and
               pushing the boundaries of what technology can do.
-            </p>
-            <p>
-              Outside of academics and work, I love creating personal
-              projects—like seamless file-sharing platforms and wellness
-              apps—and continuously expanding my skill set. I'm
-              detail-oriented, adaptable, and motivated to turn ideas into
-              actionable solutions that make a difference.
             </p>
           </div>
         </div>
@@ -1039,7 +1053,7 @@
         src="./assets/arrow.png"
         alt="Arrow"
         class="icon arrow"
-        onclick="location.href='#experience'"
+        onclick="location.href = '#experience'"
       />
     </section>
 
@@ -1055,6 +1069,7 @@
             src="./assets/bascom.png"
             alt="Software Development icon"
             class="experience-icon"
+            onclick="window.open('https://bascomhunter.com/', '_blank')"
           />
           <h3>Software Development Intern</h3>
           <span>Bascom Hunter Technologies, Inc. | Summer 2026 (Incoming)</span>
@@ -1066,24 +1081,34 @@
           </ul>
         </div>
 
-        <!-- Air Force National Guard -->
+        <!-- Advanced Systems Integration Consultants (ASIC, Inc.) -->
         <div class="experience-card">
           <img
-            src="./assets/Seperated-Symbol.jpg"
-            alt="Air Force icon"
+            src="./assets/logo.png"
+            alt="Controls Engineering icon"
             class="experience-icon"
+            style="
+              width: 80px;
+              height: 60px;
+              object-fit: contain;
+              background: white;
+              padding: 5px;
+            "
+            onclick="window.open('https://www.asicinc.com/', '_blank')"
           />
-          <h3>Financial Management & Comptroller</h3>
-          <span>Air Force National Guard | Jun 2021 – Present</span>
+          <h3>Controls Engineering Intern (HMI and Industrial Automation)</h3>
+          <span
+            >Advanced Systems Integration Consultants (ASIC, Inc.) | Jan 2026 –
+            May 2026</span
+          >
           <ul>
             <li>
-              Managed accounting records and systems, ensuring responsible utilization of over $2 million in funds.
+              Working with HMI (Human-Machine Interface) and industrial
+              automation systems.
             </li>
             <li>
-              Processed and certified 500+ transactions with 98% accuracy.
-            </li>
-            <li>
-              Led a team of 5 members to certify transactions and onboard new personnel.
+              Gaining hands-on experience in controls engineering within a
+              professional environment.
             </li>
           </ul>
         </div>
@@ -1094,18 +1119,52 @@
             src="./assets/download.jpeg"
             alt="AI Research icon"
             class="experience-icon"
+            onclick="window.open('https://joinhandshake.com/', '_blank')"
           />
           <h3>AI Research Assistant (Data Annotation)</h3>
-          <span>Handshake AI Solutions | Nov 2025 – Present</span>
+          <span>Handshake AI Solutions | Nov 2025 – Jan 2026</span>
           <ul>
             <li>
-              Analyzed and labeled AI generated images for multimodal model training.
+              Analyzed and labeled AI generated images for multimodal model
+              training.
             </li>
             <li>
-              Produced precise transformation descriptions and met accuracy benchmarks.
+              Produced precise transformation descriptions and met accuracy
+              benchmarks.
             </li>
             <li>
-              Contributed large-volume research datasets under strict timing standards.
+              Contributed large-volume research datasets under strict timing
+              standards.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Air Force National Guard -->
+        <div class="experience-card">
+          <img
+            src="./assets/Seperated-Symbol.jpg"
+            alt="Air Force icon"
+            class="experience-icon"
+            onclick="
+              window.open(
+                'https://www.airforce.com/ways-to-serve/air-national-guard',
+                '_blank',
+              )
+            "
+          />
+          <h3>Financial Management & Comptroller</h3>
+          <span>Air Force National Guard | Jun 2021 – Present</span>
+          <ul>
+            <li>
+              Managed accounting records and systems, ensuring responsible
+              utilization of over $2 million in funds.
+            </li>
+            <li>
+              Processed and certified 500+ transactions with 98% accuracy.
+            </li>
+            <li>
+              Led a team of 5 members to certify transactions and onboard new
+              personnel.
             </li>
           </ul>
         </div>
@@ -1116,35 +1175,35 @@
             src="./assets/download.png"
             alt="IT icon"
             class="experience-icon"
+            onclick="window.open('https://555.com/', '_blank')"
           />
           <h3>IT Specialist (Internship)</h3>
           <span>555 International | May 2023 – Aug 2023</span>
           <ul>
             <li>
-              Imaged, deployed, and reinstalled OS on 200+ devices, ensuring security and system reliability.
+              Imaged, deployed, and reinstalled OS on 200+ devices, ensuring
+              security and system reliability.
             </li>
             <li>
-              Diagnosed and resolved technical issues with a 95%+ first-contact resolution rate.
+              Diagnosed and resolved technical issues with a 95%+ first-contact
+              resolution rate.
             </li>
           </ul>
         </div>
 
         <!-- Volunteer Experience -->
-        <div class="experience-card">
+        <div class="experience-card volunteer">
           <img
             src="./assets/volunteer.png"
             alt="Volunteer icon"
             class="experience-icon"
+            onclick="window.open('https://www.hospicebr.org/', '_blank')"
           />
           <h3>Volunteer</h3>
           <span>The Hospice of Baton Rouge | Aug 2024 – Present</span>
           <ul>
-            <li>
-              Provided emotional support to patients and families.
-            </li>
-            <li>
-              Assisted staff with administrative operations.
-            </li>
+            <li>Provided emotional support to patients and families.</li>
+            <li>Assisted staff with administrative operations.</li>
           </ul>
         </div>
       </div>
@@ -1153,7 +1212,7 @@
         src="./assets/arrow.png"
         alt="Arrow"
         class="icon arrow"
-        onclick="location.href='#skills'"
+        onclick="location.href = '#skills'"
       />
     </section>
 
@@ -1206,7 +1265,7 @@
         src="./assets/arrow.png"
         alt="Arrow"
         class="icon arrow fade-in"
-        onclick="location.href='#projects'"
+        onclick="location.href = '#projects'"
       />
     </section>
 
@@ -1215,7 +1274,7 @@
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="projects-container">
           <!-- Project 1 -->
           <div class="details-container color-container">
             <div class="article-container">
@@ -1229,18 +1288,26 @@
               Drop & Go File Sharing
             </h2>
             <p>
-              A secure file-sharing site with Firebase Storage and Firestore. Implemented authentication, upload validation, and timed link expiration.
+              A secure file-sharing site with Firebase Storage and Firestore.
+              Implemented authentication, upload validation, and timed link
+              expiration.
             </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/keezyttg/File-sharing-Website'"
+                onclick="
+                  location.href =
+                    'https://github.com/keezyttg/File-sharing-Website'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://vimeo.com/1071940493/26d9474f57?share=copy'"
+                onclick="
+                  location.href =
+                    'https://vimeo.com/1071940493/26d9474f57?share=copy'
+                "
               >
                 Live Demo
               </button>
@@ -1260,12 +1327,17 @@
               Fortis - Wellness App
             </h2>
             <p>
-              A Flutter wellness app with journaling, meditation, and grounding tools. Led UI/UX design in Figma and integrated Firebase Auth and Firestore.
+              A Flutter wellness app with journaling, meditation, and grounding
+              tools. Led UI/UX design in Figma and integrated Firebase Auth and
+              Firestore.
             </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/CSC-3380-Spring-2025/Team-15'"
+                onclick="
+                  location.href =
+                    'https://github.com/CSC-3380-Spring-2025/Team-15'
+                "
               >
                 Github
               </button>
@@ -1285,18 +1357,25 @@
               Car Offer Analyzer
             </h2>
             <p>
-              A PWA that evaluates car offers using market data and AI negotiation logic. Built with Next.js, React, TailwindCSS, and OpenAI API for fairness scoring.
+              A PWA that evaluates car offers using market data and AI
+              negotiation logic. Built with Next.js, React, TailwindCSS, and
+              OpenAI API for fairness scoring.
             </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/keezyttg/Car-Offer-Analyzer'"
+                onclick="
+                  location.href =
+                    'https://github.com/keezyttg/Car-Offer-Analyzer'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://car-offer-analyzer.vercel.app/'"
+                onclick="
+                  location.href = 'https://car-offer-analyzer.vercel.app/'
+                "
               >
                 Link
               </button>
@@ -1308,7 +1387,7 @@
         src="./assets/arrow.png"
         alt="Arrow"
         class="icon arrow"
-        onclick="location.href='#contact'"
+        onclick="location.href = '#contact'"
       />
     </section>
 
@@ -1359,7 +1438,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright © 2025 Lorenzo Jackson. All Rights Reserved.</p>
+      <p>Copyright © 2026 Lorenzo Jackson. All Rights Reserved.</p>
     </footer>
 
     <script>
@@ -1415,12 +1494,14 @@
       }
 
       function updateNavOnScroll() {
-        const nav = document.querySelector("nav");
-        if (window.scrollY > 50) {
-          nav.classList.add("scrolled");
-        } else {
-          nav.classList.remove("scrolled");
-        }
+        const navs = document.querySelectorAll("nav");
+        navs.forEach((nav) => {
+          if (window.scrollY > 50) {
+            nav.classList.add("scrolled");
+          } else {
+            nav.classList.remove("scrolled");
+          }
+        });
       }
 
       // Fade-in animation
@@ -1432,7 +1513,7 @@
 
       const appearOnScroll = new IntersectionObserver(function (
         entries,
-        appearOnScroll
+        appearOnScroll,
       ) {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) {
@@ -1442,8 +1523,7 @@
             appearOnScroll.unobserve(entry.target);
           }
         });
-      },
-      appearOptions);
+      }, appearOptions);
 
       faders.forEach((fader) => {
         appearOnScroll.observe(fader);
@@ -1453,14 +1533,21 @@
       const text = "Computer Science Student & Developer";
       let i = 0;
       const typeWriter = () => {
-        if (i < text.length) {
-          const element = document.querySelector(".section__text__p2");
-          if (element) {
+        const element = document.querySelector(".section__text__p2");
+        if (!element) return;
+
+        // Clear any existing text before starting
+        element.textContent = "";
+        i = 0;
+
+        const type = () => {
+          if (i < text.length) {
             element.textContent += text.charAt(i);
             i++;
-            setTimeout(typeWriter, 100);
+            setTimeout(type, 100);
           }
-        }
+        };
+        type();
       };
 
       // Start typing after page loads
@@ -1471,7 +1558,7 @@
       // Add fade-in class to elements
       document.addEventListener("DOMContentLoaded", function () {
         const observerElements = document.querySelectorAll(
-          ".experience-card, .skill-category, .color-container, .details-container"
+          ".experience-card, .skill-category, .color-container, .details-container",
         );
         observerElements.forEach((el) => {
           el.classList.add("fade-in");
